@@ -6,7 +6,7 @@
 /*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/17 14:19:07 by sserakal          #+#    #+#             */
-/*   Updated: 2020/06/18 08:58:41 by sserakal         ###   ########.fr       */
+/*   Updated: 2020/06/18 10:38:06 by sserakal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -18,8 +18,8 @@ void ft_print_alphabet(void)
 	letter  = 'a';
 	while(letter <= 'z')
 	{
-			ft_putchar(letter);
-			letter++;
+		ft_putchar(letter);
+		letter++;
 	}
 
 
@@ -33,4 +33,4 @@ void ft_print_alphabet(void)
 
 
 
-			
+
