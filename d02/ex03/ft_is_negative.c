@@ -1,15 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/18 09:03:48 by sserakal          #+#    #+#             */
+/*   Updated: 2020/06/18 10:16:02 by sserakal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include <unistd.h>
+
 void ft_putchar(char c);
 void ft_is_negative(int n)
 {
-unsigned int i;
-i = 0;
-if(n < 0)
-{
-ft_putchar('N');
+	if(n < 0)
+	{
+		ft_putchar('N');
+	}
+	else
+	{
+		ft_putchar('P');
+	}
 }
-if(n > 0 || n = '\0')
-{
-ft_putchar('P');
-}
-}
+
 
