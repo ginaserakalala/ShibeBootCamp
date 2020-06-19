@@ -1,24 +1,45 @@
-void ft_putchar(char c);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/19 13:55:19 by sserakal          #+#    #+#             */
+/*   Updated: 2020/06/19 14:38:24 by sserakal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void ft_putchar(char c) ;
 void ft_print_comb(void)
 {
-	unsigned int i,j,h;
-	i = 0;
-	while(i < 9)
-	{
-		j = 0;
-		while(j < 3)
-		{
-			j++;
-			h = 0;
-			while(h < 9)
-			{
-				if(if i != k && j != k && k != i)
-				{
-					ft_putchar(i);;
-				}
+	char a;
+	char b;
+	char c;
 
+	a = '0' - 1;
+	while(++a <= '9')
+	{
+		b = a;
+		while(++b < '9')
+		{
+			c = b + 1;  
+			while(c < '9')
+			{
+				ft_putchar(a);
+				ft_putchar(b);
+				ft_putchar(c);
+
+				if( a != '7' || b != '8' || c != '9')
+				{
+					ft_putchar(' ');
+					ft_putchar(',');
+				}
+				c++;
 			}
 
 		}
+
 	}
 }
+
