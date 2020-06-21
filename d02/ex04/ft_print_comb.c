@@ -6,7 +6,7 @@
 /*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/19 13:55:19 by sserakal          #+#    #+#             */
-/*   Updated: 2020/06/19 14:38:24 by sserakal         ###   ########.fr       */
+/*   Updated: 2020/06/21 08:54:31 by sserakal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ void ft_print_comb(void)
 	char b;
 	char c;
 
-	a = '0' - 1;
-	while(++a <= '9')
+	a = 0;
+	while(a <= '9')
 	{
 		b = a;
-		while(++b < '9')
+		while(b < '9')
 		{
 			c = b + 1;  
 			while(c < '9')
@@ -37,9 +37,9 @@ void ft_print_comb(void)
 				}
 				c++;
 			}
-
+			b++;
 		}
-
+		a++;
 	}
 }
 
