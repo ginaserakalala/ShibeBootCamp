@@ -6,17 +6,11 @@
 /*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/20 08:57:30 by sserakal          #+#    #+#             */
-/*   Updated: 2020/06/20 10:55:07 by sserakal         ###   ########.fr       */
+/*   Updated: 2020/06/21 08:51:55 by sserakal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void ft_putchar(char c)
-{
-	write(1,&c,1);
-}
-
+void ft_putchar(char c);
 void ft_putnbr(int nb)
 {
 
@@ -41,8 +35,4 @@ void ft_putnbr(int nb)
 		ft_putchar(nb + '0');
 	}
 }
-int main()
-{
-	ft_putnbr(42);
-	return(0);
-}
+
