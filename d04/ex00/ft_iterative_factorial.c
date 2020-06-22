@@ -1,20 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/22 10:43:28 by sserakal          #+#    #+#             */
+/*   Updated: 2020/06/22 11:51:54 by sserakal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <unistd.h>
 int ft_iterative_factorial(int nb)
 {
 	int factorial;
-	factorial = 0;
+
+	factorial = 1;
 	while(factorial < nb)
 	{
-		factorial = factorial * nb;
 		factorial++;
+		factorial = factorial * nb;
 	}
 	return factorial;
+
 	return 0;
-}
-int main()
-{
-int num;
-	ft_iterative_factorial(5);
-		return (0);
 }
