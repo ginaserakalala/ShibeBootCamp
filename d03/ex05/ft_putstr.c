@@ -1,6 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/22 09:40:30 by sserakal          #+#    #+#             */
+/*   Updated: 2020/06/22 09:41:45 by sserakal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_putchar(char c);
-void ft_putstr(char *str)
+void	 ft_putchar(char c);
+void	 ft_putstr(char *str)
 {
 	int i = 0;
 	while(str[i] != '\0')
@@ -8,5 +19,4 @@ void ft_putstr(char *str)
 		ft_putchar(str[i]);
 		i++;
 	}
-
 }
