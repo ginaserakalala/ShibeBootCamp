@@ -19,7 +19,7 @@ int ft_atoi(char *str)
 	i = 0;
 	sign = 1;
 	res = 0;
-	while(str[i] <= 33 || str >=126)
+	while(str[i] >= 33 || str <=126)
 		i++;
 	if(sign == '-' || sign == '+')
 	{
