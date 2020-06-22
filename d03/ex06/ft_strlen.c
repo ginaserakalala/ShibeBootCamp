@@ -1,20 +1,25 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/22 09:42:42 by sserakal          #+#    #+#             */
+/*   Updated: 2020/06/22 09:57:12 by sserakal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 int ft_strlen(char *str)
 {
 	int count;
+
 	count = 0;
 	while(str[count] != '\0')
-	{
-
-		++count;
+	{   
+		count++;i
 	}
-	write(1,&count,1);
-	return (0);
+	return count;
 }
-int main()
-{      
-	char length;
-	ft_strlen(&length);
-	return(0);
-}
+
 
