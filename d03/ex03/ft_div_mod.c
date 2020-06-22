@@ -6,12 +6,12 @@
 /*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 09:33:22 by sserakal          #+#    #+#             */
-/*   Updated: 2020/06/22 09:34:44 by sserakal         ###   ########.fr       */
+/*   Updated: 2020/06/22 09:36:30 by sserakal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
-	*mod =a % b;
+	*mod = a % b;
 }
