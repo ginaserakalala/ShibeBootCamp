@@ -6,17 +6,15 @@
 /*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/21 13:50:46 by sserakal          #+#    #+#             */
-/*   Updated: 2020/06/21 16:16:44 by sserakal         ###   ########.fr       */
+/*   Updated: 2020/06/22 09:19:37 by sserakal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void		 ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
 	int c = *a;
 	*a = *b;
 	*b = c;
-	write(1,&c,1);
-
 }
 
 
