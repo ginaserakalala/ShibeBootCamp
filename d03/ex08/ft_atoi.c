@@ -1,21 +1,36 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/22 10:09:59 by sserakal          #+#    #+#             */
+/*   Updated: 2020/06/22 10:17:44 by sserakal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 int ft_atoi(char *str)
 {
 	int i;
-	i = 0;
+	int sign;
 	int res;
+
+	i = 0;
+	sign = 1;
 	res = 0;
-	while(str[i] != '\0')
+	while(str[i] <= 33 || str >=126)
+		i++;
+	if(sign == '-' || sign == '+')
 	{
-		res = res * 10 + str[i] - '0';
+		if(sign == '-')
+			sign = -1;
 		i++;
 	}
+	while(str[i] >= '0' && str[i] <= '9')
+	{
+		res = res * 10 + str[i] - '0';
+	}
+
 	return res;
 }
-int main()
-{
-	ft_atoi("hjjfg");
-	return (0);
-}
-
