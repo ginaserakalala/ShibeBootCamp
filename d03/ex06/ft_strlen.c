@@ -6,7 +6,7 @@
 /*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 09:42:42 by sserakal          #+#    #+#             */
-/*   Updated: 2020/06/22 09:57:12 by sserakal         ###   ########.fr       */
+/*   Updated: 2020/06/23 08:52:45 by sserakal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,10 @@ int ft_strlen(char *str)
 	int count;
 
 	count = 0;
-	while(str[count] != '\0')
+	while(*str != '\0')
 	{   
 		count++;
+		str++;
 	}
 	return count;
 }
-
-
