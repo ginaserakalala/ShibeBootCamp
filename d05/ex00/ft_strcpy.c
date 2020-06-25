@@ -5,13 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sserakal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/22 16:38:28 by sserakal          #+#    #+#             */
-/*   Updated: 2020/06/22 17:08:33 by sserakal         ###   ########.fr       */
+/*   Created: 2020/06/25 08:48:43 by sserakal          #+#    #+#             */
+/*   Updated: 2020/06/25 08:49:38 by sserakal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char *ft_strcpy(char *dest, char *src)
 {
-
+	int i;
+	while (src[i] != '\0')
+	{
+		++i;
+		dest[i] = src[i];
+	}
+	return dest;
 }
-
